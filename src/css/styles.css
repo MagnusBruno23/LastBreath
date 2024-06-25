@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Seagram-tfb';
+  src: url('src/assets/Enchanted-Land.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Seagram-tfb';
+}
+
+body, html, #q-app {
+  min-height: 100vh;
+  height: 100%;
+}
+
+#q-app {
+  background: url('~assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
