@@ -26,7 +26,7 @@
           <q-input filled v-model="habilidadeEmEdicao.descricao" label="Descrição" type="textarea" />
           <q-input filled v-model.number="habilidadeEmEdicao.custo" label="Custo" type="number" />
           <q-input filled v-model.number="habilidadeEmEdicao.cooldown" label="Cooldown" type="number" />
-          <q-input filled v-model.number="habilidadeEmEdicao.cooldown" label="Dano" type="number" />
+          <q-input filled v-model.number="habilidadeEmEdicao.dano" label="Dano" type="number" />
         </q-card-section>
         <q-card-actions align="right">
           <q-btn flat label="Cancelar" @click="cancelarAdicionarHabilidade" />
@@ -44,7 +44,7 @@
           <div><strong>Descrição:</strong> {{ habilidadeEmEdicao.descricao }}</div>
           <div><strong>Custo:</strong> {{ habilidadeEmEdicao.custo }}</div>
           <div><strong>Cooldown:</strong> {{ habilidadeEmEdicao.cooldown }}</div>
-          <div><strong>Dano:</strong> {{ habilidadeEmEdicao.cooldown }}</div>
+          <div><strong>Dano:</strong> {{ habilidadeEmEdicao.dano }}</div>
         </q-card-section>
         <q-card-actions align="right">
           <q-btn flat label="Fechar" @click="showVisualizarHabilidadeModal = false" />
@@ -81,7 +81,8 @@ export default {
         nome: '',
         descricao: '',
         custo: 0,
-        cooldown: 0
+        cooldown: 0,
+        dano: 0
       }
     };
   },
@@ -97,7 +98,8 @@ export default {
           nome: '',
           descricao: '',
           custo: 0,
-          cooldown: 0
+          cooldown: 0,
+          dano: 0
         };
         this.habilidadeEmEdicaoIndex = null;
         this.showAdicionarHabilidadeModal = false;
@@ -109,7 +111,8 @@ export default {
         nome: '',
         descricao: '',
         custo: 0,
-        cooldown: 0
+        cooldown: 0,
+        dano: 0
       };
       this.habilidadeEmEdicaoIndex = null;
       this.showAdicionarHabilidadeModal = false;
